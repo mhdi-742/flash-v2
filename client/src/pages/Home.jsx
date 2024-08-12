@@ -30,7 +30,7 @@ const Home=()=>{
           <div className="card__face card__face--back" onClick={() => Setflip('card')}>{data[count].answers}</div>
         </div>
       </div>
-      <p className="reveal">Click card to REVEAL</p>
+      <p className="reveal">Click card to REVEAL(wait for sometimes if it looks stuck)</p>
       <div className="buttons">
          <div className={prev}>
            <button className="b1"onClick={async()=>{await Setflip('card');await setTimeout(()=>sub(),500);}}>PREV</button>
