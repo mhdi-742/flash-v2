@@ -1,0 +1,32 @@
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 100px;
+}
+.i1{
+    margin-left:50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    height: 50px;
+    width:1000px;
+    border-color: black;
+    padding: 10px;
+}
+.l1{
+    color: white;
+    background: red;
+    padding :10px;
+    border:solid;
+    border-color: black;
+}
+.b1,.b2{
+    width:200px;
+    color: white;
+    background: red;
+    border-color: white;
+}

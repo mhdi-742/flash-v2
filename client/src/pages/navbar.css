@@ -1,0 +1,21 @@
+.Navbar{
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    height: 40px;
+    text-decoration: none;
+}
+.admin{
+    padding: 10px;
+}
+.title{
+    padding:10px;
+}
+.dashbord{
+    margin-left: 900px;
+}
+.admin NavLink{
+    text-decoration: none;
+}
