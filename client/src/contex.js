@@ -12,7 +12,7 @@ const AppProvider = ({ children }) => {
     return 0;
   };
   const addquestion = async (question, answers) => {
-    const res = await fetch("http://localhost:8000/adddata", {
+    const res = await fetch("https://flash-v2.onrender.com/adddata", {
       method: "post",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({
@@ -22,7 +22,7 @@ const AppProvider = ({ children }) => {
     });
   };
   const removequestion = async (id) => {
-    const res = await fetch("http://localhost:8000/del", {
+    const res = await fetch("https://flash-v2.onrender.com/del", {
       method: "delete",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({
@@ -33,7 +33,7 @@ const AppProvider = ({ children }) => {
     });
   };
   const editquestion = async(id, question, answers) => {
-    const res = await fetch("http://localhost:8000/update", {
+    const res = await fetch("https://flash-v2.onrender.com/update", {
       method: "put",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({
@@ -44,7 +44,7 @@ const AppProvider = ({ children }) => {
   };
   const gab = async () => {
     try {
-      const info = await fetch("http://localhost:8000/data", { method: "get" });
+      const info = await fetch("https://flash-v2.onrender.com/data", { method: "get" });
       const ans = await info.json();
       setdata(ans);
     } catch (err) {
