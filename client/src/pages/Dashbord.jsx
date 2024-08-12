@@ -28,7 +28,7 @@ const Dashbord=()=>{
                         <div className='answers' key={curr.id+3}>ANSWER:<br/><hr></hr>{curr.answers}</div>
                       </div>
                       <div className='buttons ' key={curr.id+4}>
-                        <NavLink to={`https://flash-v2.onrender.com/update/${curr.id}`} key={curr.id}><button class="upd b3" key={curr.id+6}>EDIT</button></NavLink>
+                        <NavLink to={`https://flash-v2.vercel.app/update/${curr.id}`} key={curr.id}><button class="upd b3" key={curr.id+6}>EDIT</button></NavLink>
                         <button class="del b3"key={curr.id+7} onClick={()=>removequestion(curr.id)}>DELETE</button>
                       </div>
                       </div>
